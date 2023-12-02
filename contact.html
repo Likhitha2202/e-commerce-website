@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiKart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href="index.html"><img src="logo (1).png" width="100px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="about">
+            <h1>Contact Us</h1>
+        </div>
+
+    </div>
+    </div>
+   <!--Contact us-->
+   <div class="container">
+    <div class="contact-info">
+      <div class="row">
+        <div class="col2">
+            <h1>Contact Us</h1><br>
+            <p>As you might expect of a company that began as a high-end interiors contractor,we pay strict attention.</p>
+            <h3>USA</h3>
+            <p>195 E Parker Square Dr, Parker, CO 801
+             +43 982-314-0958</p>
+             <h3>
+                INDIA
+             </h3>
+             <p>Hyderabad,Pune,Delhi</p>
+        </div>
+        <div class="col2">
+            <form class="form1">
+            <label>Name</label><br>
+           <input type="text" placeholder="Name"><br>
+           <label>Email</label><br>
+           <input type="Email" placeholder="Email"><br>
+           <label>Message</label><br>
+           <textarea placeholder="Message" class="box"></textarea>
+           <div class="button">
+            <p>SEND MESSAGE</p>
+           </div>
+           </form>
+        </div>
+      </div>
+      </div>
+   </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo (1).png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benifits of Products Accessible to the Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">copyright &copy 2023-Sample</p>
+
+        </div>
+    </div>
+    <!--js for toggle menu-->
+    <script>
+        var menuitems=document.getElementById("menuitems");
+        menuitems.style.maxHeight="0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight=="0px"){
+                menuitems.style.maxHeight="200px";
+            }
+            else{
+                menuitems.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>
